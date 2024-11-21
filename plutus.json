@@ -1,0 +1,102 @@
+{
+  "preamble": {
+    "title": "apea-aiken-batch-1/aiken_piping_backpassing",
+    "description": "Aiken contracts for project 'apea-aiken-batch-1/aiken_piping_backpassing'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.7+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "backpassing.backpassing.mint",
+      "redeemer": {
+        "title": "nonce",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1OutputReference"
+        }
+      },
+      "compiledCode": "58bd01010032323232323225333002323232323253330073370e900018041baa00113253330083370e900018049baa003132323232533300f301100213232330010013758600460206ea8028894ccc04800452809991299980899baf30053013375400401829444cc010010004c04c004c0500048c04400458dd6980780098078011bae300d001300a37540062c6eb8c02cc024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba201",
+      "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
+    },
+    {
+      "title": "backpassing.backpassing.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58bd01010032323232323225333002323232323253330073370e900018041baa00113253330083370e900018049baa003132323232533300f301100213232330010013758600460206ea8028894ccc04800452809991299980899baf30053013375400401829444cc010010004c04c004c0500048c04400458dd6980780098078011bae300d001300a37540062c6eb8c02cc024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba201",
+      "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
+    },
+    {
+      "title": "piping.without.mint",
+      "redeemer": {
+        "title": "nonce",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1OutputReference"
+        }
+      },
+      "compiledCode": "58bd01010032323232323225333002323232323253330073370e900018041baa00113253330083370e900018049baa003132323232533300f301100213232330010013758600460206ea8028894ccc04800452809991299980899baf30053013375400401829444cc010010004c04c004c0500048c04400458dd6980780098078011bae300d001300a37540062c6eb8c02cc024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba201",
+      "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
+    },
+    {
+      "title": "piping.without.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58bd01010032323232323225333002323232323253330073370e900018041baa00113253330083370e900018049baa003132323232533300f301100213232330010013758600460206ea8028894ccc04800452809991299980899baf30053013375400401829444cc010010004c04c004c0500048c04400458dd6980780098078011bae300d001300a37540062c6eb8c02cc024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba201",
+      "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
+    },
+    {
+      "title": "without.without.mint",
+      "redeemer": {
+        "title": "nonce",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1OutputReference"
+        }
+      },
+      "compiledCode": "58bd01010032323232323225333002323232323253330073370e900018041baa00113253330083370e900018049baa003132323232533300f301100213232330010013758600460206ea8028894ccc04800452809991299980899baf30053013375400401829444cc010010004c04c004c0500048c04400458dd6980780098078011bae300d001300a37540062c6eb8c02cc024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba201",
+      "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
+    },
+    {
+      "title": "without.without.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58bd01010032323232323225333002323232323253330073370e900018041baa00113253330083370e900018049baa003132323232533300f301100213232330010013758600460206ea8028894ccc04800452809991299980899baf30053013375400401829444cc010010004c04c004c0500048c04400458dd6980780098078011bae300d001300a37540062c6eb8c02cc024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba201",
+      "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "title": "ByteArray",
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "cardano/transaction/OutputReference": {
+      "title": "OutputReference",
+      "description": "An `OutputReference` is a unique reference to an output on-chain. The `output_index`\n corresponds to the position in the output list of the transaction (identified by its id)\n that produced that output",
+      "anyOf": [
+        {
+          "title": "OutputReference",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "transaction_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "output_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
