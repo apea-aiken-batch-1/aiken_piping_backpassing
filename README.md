@@ -1,6 +1,6 @@
 # aiken_piping_backpassing
 
-This project compares [`without`](./validators/without.ak) piping/backpassing code, vs:
+This project compares code [`without`](./validators/without.ak) piping/backpassing, vs:
 
 - with [`piping`](./validators/piping.ak)
   ![Screenshot from 2024-11-21 11-17-50](https://github.com/user-attachments/assets/4d70a866-4061-4d08-9b85-6ddbe508ecfa)
