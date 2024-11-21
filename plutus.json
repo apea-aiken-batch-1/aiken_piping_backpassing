@@ -31,7 +31,7 @@
       "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
     },
     {
-      "title": "piping.without.mint",
+      "title": "piping.piping.mint",
       "redeemer": {
         "title": "nonce",
         "schema": {
@@ -42,7 +42,7 @@
       "hash": "8452747fc56391585a5f126d6b3e40746651eaaea688725d2632f520"
     },
     {
-      "title": "piping.without.else",
+      "title": "piping.piping.else",
       "redeemer": {
         "schema": {}
       },
